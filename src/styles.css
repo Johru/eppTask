@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  color: #f0f0f0;
+  background-color: #18191a;
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+p {
+  margin: 0.3em 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h4 {
+  margin: 0.1em;
+}
+
+button {
+  cursor: auto;
+  width: 45%;
+  justify-self: start;
+  background: #242526;
+  border-radius: 1em;
+  border: 0px;
+  color: inherit;
+  padding: 0.7em;
+  margin: 0 5vw;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+
+.active-button {
+  cursor: pointer;
+}
+
+.active-button:hover {
+  background: #3a3b3c;
+}
+
+.post-item {
+  border: 0px solid white;
+  color: white;
+  padding: 0 1rem;
+  cursor: pointer;
+  justify-self: start;
+  margin: 0 0 0 5vw;
+  width: 55vw;
+  background-color: #242526;
+}
+
+.post-item:hover {
+  background-color: #3a3b3c;
+}
+
+.main-wrapper {
+  background-color: #242526;
+  width: 75vw;
+  display: grid;
+  place-items: center;
+  padding: 2em 0;
+}
+
+.comment-item {
+  color: white;
+  border: 0px solid rgb(138, 137, 137);
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 0.3em 0 0 0;
+  width: 50vw;
+  background-color: #3a3b3c;
+  display: grid;
+}

@@ -1,0 +1,7 @@
+.single-post {
+  cursor: auto;
+}
+
+.post-item:hover {
+  background-color: #242526;
+}

@@ -1,0 +1,27 @@
+<div class="main-wrapper">
+  <button routerLink="/posts" class="active-button">BACK TO WALL</button>
+
+  <p *ngIf="id === 0">Post not found</p>
+
+  <ng-container *ngIf="!isLoading">
+    <div class="post-item single-post">
+      <h3>
+        {{ post.title }}
+      </h3>
+      <p>
+        Author: <u>{{ user.name }}</u>
+      </p>
+      <p>{{ post.body }}</p>
+    </div>
+
+    <div *ngFor="let comment of comments" class="comment-item">
+      <p>
+        <b>{{ comment.name }}</b>
+      </p>
+      <p>
+        <u>{{ comment.email }}</u>
+      </p>
+      <p>{{ comment.body }}</p>
+    </div>
+  </ng-container>
+</div>
